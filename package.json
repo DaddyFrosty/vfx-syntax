@@ -1,7 +1,7 @@
 {
 	"name": "vfx",
-	"displayName": "%displayName%",
-	"description": "%description%",
+	"displayName": "VFX Syntax Highlighter",
+	"description": "Syntax Highlighter for the VFX language (Valve Shading Language) and HLSL",
 	"version": "1.0.0",
 	"publisher": "DaddyFrosty",
 	"license": "MIT",
@@ -38,14 +38,14 @@
 		],
 		"grammars": [
 			{
-			"language": "vfx",
-			"path": "./syntaxes/vfx.tmLanguage.jsonc",
-			"scopeName": "source.vfx"
+				"language": "vfx",
+				"path": "./syntaxes/vfx.tmLanguage.jsonc",
+				"scopeName": "source.vfx"
 			},
 			{
-			"language": "hlsl",
-			"path": "./syntaxes/hlsl.tmLanguage.jsonc",
-			"scopeName": "source.hlsl"
+				"language": "hlsl",
+				"path": "./syntaxes/hlsl.tmLanguage.jsonc",
+				"scopeName": "source.hlsl"
 			}
 		]
 	},
