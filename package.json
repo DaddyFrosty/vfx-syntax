@@ -1,0 +1,56 @@
+{
+	"name": "vfx",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "1.0.0",
+	"publisher": "DaddyFrosty",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"scripts": {
+		"update-grammar": "node ../node_modules/vscode-grammar-updater/bin tgjones/shaders-tmLanguage grammars/vfx.json ./syntaxes/vfx.tmLanguage.jsonc"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "vfx",
+				"extensions": [
+					".vfx"
+				],
+				"aliases": [
+					"VFX",
+					"vfx"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "hlsl",
+				"extensions": [
+					".hlsl"
+				],
+				"aliases": [
+					"HLSL",
+					"HLSL"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+			"language": "vfx",
+			"path": "./syntaxes/vfx.tmLanguage.jsonc",
+			"scopeName": "source.vfx"
+			},
+			{
+			"language": "hlsl",
+			"path": "./syntaxes/hlsl.tmLanguage.jsonc",
+			"scopeName": "source.hlsl"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/microsoft/vscode.git"
+	}
+}
