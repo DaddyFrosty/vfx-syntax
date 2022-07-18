@@ -31,7 +31,7 @@
 				],
 				"aliases": [
 					"HLSL",
-					"HLSL"
+					"hlsl"
 				],
 				"configuration": "./language-configuration.json"
 			}
@@ -39,12 +39,12 @@
 		"grammars": [
 			{
 				"language": "vfx",
-				"path": "./syntaxes/vfx.tmLanguage.jsonc",
+				"path": "./syntaxes/vfx.tmLanguage.json",
 				"scopeName": "source.vfx"
 			},
 			{
 				"language": "hlsl",
-				"path": "./syntaxes/hlsl.tmLanguage.jsonc",
+				"path": "./syntaxes/hlsl.tmLanguage.json",
 				"scopeName": "source.hlsl"
 			}
 		]
