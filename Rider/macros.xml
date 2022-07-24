@@ -1,0 +1,8 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Touch And Save All No Wait">
+      <action id="SaveAll" />
+      <action id="Tool_External Tools_Touch" />
+    </macro>
+  </component>
+</application>

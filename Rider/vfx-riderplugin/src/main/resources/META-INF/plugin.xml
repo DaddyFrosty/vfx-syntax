@@ -1,0 +1,44 @@
+<!-- SPDX-License-Identifier: MIT -->
+
+<idea-plugin require-restart="false">
+    <id>daddyfrosty.intellij.vfx.support</id>
+    <name>VFX Support</name>
+    <version>REPLACED_BY_GRADLE</version>
+    <vendor email="william@skynetc.net" url="https://github.com/daddyfrosty">DaddyFrosty</vendor>
+
+    <description><![CDATA[
+      <ul>
+        <li>Adds icons for Valve VFX shaders and hlsl.</li>
+        <li>Will do parsing using a plugin some time.</li>
+        <li>Copy of https://github.com/jonathanlermitage/intellij-extra-icons-plugin for the Icon part.</li>
+      </ul>
+    ]]>
+    </description>
+
+    <idea-version since-build="211.7628.21"/>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html#modules-available-in-all-products
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.vcs</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!--suppress PluginXmlValidity (can't find third-party plugins, but it's OK) -->
+<!--        <fileIconProvider-->
+<!--            id="angular2genericFileIconProvider"-->
+<!--            order="first, before amailp.intellij.robot, before com.vladsch.idea.multimarkdown, before com.hiberbee.intellij.hiberbee-theme, before nb-mind-map-idea"-->
+<!--            implementation="daddyfrosty.intellij.vfx.support.providers.Angular2IconProvider"/>-->
+        <!--suppress PluginXmlValidity (can't find third-party plugins, but it's OK) -->
+        <iconProvider
+            id="vfxIconProvider"
+            order="first, before amailp.intellij.robot, before com.vladsch.idea.multimarkdown, before com.hiberbee.intellij.hiberbee-theme, before nb-mind-map-idea"
+            implementation="daddyfrosty.intellij.vfx.support.vfxIconProvider"/>
+        <!--suppress PluginXmlValidity (can't find third-party plugins, but it's OK) -->
+<!--        <openapi.vcs.changes.ui.filePathIconProvider-->
+<!--            id="angular2FilePathIconProvider"-->
+<!--            order="first, before amailp.intellij.robot, before com.vladsch.idea.multimarkdown, before com.hiberbee.intellij.hiberbee-theme, before nb-mind-map-idea"-->
+<!--            implementation="daddyfrosty.intellij.vfx.support.providers.Angular2IconProvider"/>-->
+    </extensions>
+</idea-plugin>

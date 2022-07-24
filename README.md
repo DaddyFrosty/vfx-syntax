@@ -1,65 +1,47 @@
-# vfx README
+# s&box Utilities
+* VFX ( Valve Shading Language ) Syntax Support & Icons
+* Rider force save
+* Source code available for everything
 
-This is the README for your extension "vfx". After writing up a brief description, we recommend including the following sections.
+Supports
+* VS Code
+* Rider
 
 ## Features
+Well the header says it all. Icons are only set on Rider by importing a plugin in this repo.<br>
+The Force Save works by setting the currently open file's last write time to the file's last write time.<br>
+Force save basically just loops back the last edited time. It shouldn't actually affect the timestamp.<br>
+There is also a macro included, it's a Rider user xml file. You can also add a keybinding see [Rider Setup](#rider-setup).<br>
+The macro instantly saves all files and calls the [Rider/TouchForRider.exe](TouchForRider.exe) to trigger a file change.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Setup
+For VS Code it's just a simple install. You can either git clone or search for "VFX Syntax Highlighter" on the Marketplace.
 
-For example if there is an image subfolder under your extension project workspace:
+## Rider Setup
+* **Saving** | Rider -> Settings -> File | Settings | Tools | External Tools. Add an entry named "Touch"<br>
+For reference see [File | Settings | Tools | External Tools](#Reference pictures). Otherwise.<br>
+The name matters. Set the program to [Rider/TouchForRider.exe](Rider/TouchForRider.exe).<br>
+Set "Arguments" to "$FilePath$" and you're done. You can set a keybinding for the tool or use the provided macro.
+<br>
+<br>
+* **Macro Install** | For the macro start by opening "%appdata%\JetBrains\YOUR_RIDER_VERSION\options"<br>
+Open the macros.xml and add the entry from [Rider/Macros.xml](Rider/Macros.xml). Save the file and restart Rider.<br>
+You'll be able to bind a key to the Macro. Remember, the Macro is set to silently run Save All and run TouchForRider.exe
+<br> Click on the "+" button and add the downloaded content.
+<br>
+<br>
+* **Syntax Highlighting** | Download the contents of [Rider/vfx-textmate.zip](Rider/vfx-textmate.zip) open Rider -> Settings -> File | Settings | Editor | TextMate Bundles.<br>
+<br>**VFX and HLSL Icons** | First you need to download the plugin from [Rider/VFX Icons.zip](Rider/VFX Icons-2022.1.7.zip) or [plugins.jetbrains.com/plugin/19567-vfx-support](https://plugins.jetbrains.com/plugin/19567-vfx-support) if the plugin has been approved yet.
+<br>Otherwise download it locally and go into Rider -> Settings -> File | Settings | Plugins. Right click on the cog which is next to the *Installed* tab.
+[Reference Image](#file--settings--plugins--install-plugin-from-disk)
+<br>Choose "Install Plugin from Disk..." choose the downloaded zip file from [Rider/VFX Icons.zip](Rider/VFX Icons-2022.1.7.zip).
+<br>
+<br>
+**Now you are all setup. Enjoy!**
 
-\!\[feature X\]\(images/feature-x.png\)
+# Reference pictures
+### File | Settings | Tools | External Tools
+<img src="https://share.willswebsite.net/rider64_iD3RtNcrdU.png" width="50%">
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### File | Settings | Plugins | Install Plugin from Disk...
+<img src="https://share.willswebsite.net/rider64_ky8gnH6d2Q.png" width="75%">
