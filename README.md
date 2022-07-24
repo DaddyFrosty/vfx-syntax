@@ -55,3 +55,11 @@ You'll be able to bind a key to the Macro. Remember, the Macro is set to silentl
 ### File | Settings | Plugins | Install Plugin from Disk
 
 <img src="https://share.willswebsite.net/rider64_ky8gnH6d2Q.png" width="75%">
+
+# Note
+* The syntax definition is based on the open source HLSL definition for VS code.  
+I have added a lot of stuff and made it comply with VFX's rules.
+* The Rider plugin for icons is a based on https://github.com/jonathanlermitage/intellij-extra-icons-plugin.
+* Any improvements or bugs feel free to contact me DaddyFrosty#4200 or make a PR. There is also a .jsonc file and .json for the syntax defintions.  
+This is because Rider was reading .jsonc fine, but then when I wanted to use it in VS Code it couldn't read .jsonc. If you do make changes please do so in .jsonc.  
+* I might end up writing a proper language parser soon tho, but writing VFX is very difficult sometimes, having pixel.input open and like three other files is very common and annoying.
