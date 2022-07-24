@@ -2,10 +2,10 @@
 	"name": "vfx",
 	"displayName": "VFX Syntax Highlighter",
 	"description": "Syntax Highlighter for the VFX language (Valve Shading Language) and HLSL",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "DaddyFrosty",
 	"license": "MIT",
-	"icon": "mat.png",
+	"icon": "icons/met.ico",
 	"engines": {
 		"vscode": "*"
 	},
@@ -23,7 +23,11 @@
 					"VFX",
 					"vfx"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "./icons/met.ico",
+					"dark": "./icons/met.ico"
+				}
 			},
 			{
 				"id": "hlsl",
@@ -34,7 +38,11 @@
 					"HLSL",
 					"hlsl"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "./icons/met.ico",
+					"dark": "./icons/met.ico"
+				}
 			}
 		],
 		"grammars": [
@@ -53,5 +61,12 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/DaddyFrosty/vfx-syntax.git"
+	},
+	"__metadata": {
+		"id": "133441d1-02fb-40e3-9e93-902ddf95fa54",
+		"publisherDisplayName": "DaddyFrosty",
+		"publisherId": "d5ba6fba-90c2-44fa-ba14-cb02ff6e6d66",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1658655760695
 	}
 }
