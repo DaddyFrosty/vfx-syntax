@@ -20,8 +20,7 @@ The macro instantly saves all files and calls the [TouchForRider.exe](Rider/Touc
 
 ## Setup
 
-For VS Code it's just a simple install. You can either git clone or search for "VFX Syntax Highlighter" on the
-Marketplace.
+For VS Code it's just a simple install. You can either git clone or search for "VFX Syntax Highlighter" or grab it [here](https://marketplace.visualstudio.com/items?itemName=DaddyFrosty.vfx) from the marketplace.
 
 ## Rider Setup
 

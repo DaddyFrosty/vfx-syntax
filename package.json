@@ -2,9 +2,10 @@
 	"name": "vfx",
 	"displayName": "VFX Syntax Highlighter",
 	"description": "Syntax Highlighter for the VFX language (Valve Shading Language) and HLSL",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "DaddyFrosty",
 	"license": "MIT",
+	"icon": "mat.png",
 	"engines": {
 		"vscode": "*"
 	},
