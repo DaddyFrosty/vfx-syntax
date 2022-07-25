@@ -38,10 +38,10 @@ You'll be able to bind a key to the Macro. Remember, the Macro is set to silentl
   
   
 * <b>Syntax Highlighting</b> | Download the contents of [Rider/vfx-textmate.zip](Rider/vfx-textmate.zip) open Rider -> Settings -> File | Settings | Editor | TextMate Bundles.  
-  <b>VFX and HLSL Icons</b> | First you need to download the plugin from [Rider/VFX Icons.zip](Rider/VFX%20Icons-2022.1.7.zip) or [plugins.jetbrains.com/plugin/19567-vfx-support](https://plugins.jetbrains.com/plugin/19567-vfx-support) if the plugin has been approved yet.
+  <b>VFX and HLSL Icons</b> | First you need to download the plugin from [Rider/VFX-Plugin.zip](Rider/VFX-Plugin.zip) or [plugins.jetbrains.com/plugin/19567-vfx-support](https://plugins.jetbrains.com/plugin/19567-vfx-support) if the plugin has been approved yet.
   Otherwise download it locally and go into Rider -> Settings -> File | Settings | Plugins. Right click on the cog which is next to the *Installed* tab.  
 [Reference Image](#file--settings--plugins--install-plugin-from-disk)
-  Choose "Install Plugin from Disk..." choose the downloaded zip file from [Rider/VFX Icons.zip](Rider/VFX%20Icons-2022.1.7.zip).
+  Choose "Install Plugin from Disk..." choose the downloaded zip file from [Rider/VFX-Plugin.zip](Rider/VFX-Plugin.zip).
   
   
 <b>Now you are all setup. Enjoy!</b>

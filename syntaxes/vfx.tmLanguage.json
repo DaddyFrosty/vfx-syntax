@@ -10,7 +10,7 @@
 	"patterns": [
 		{
 			"name": "meta.hlslblock",
-			"begin": "\\b(HEADER|MODES|FEATURES|COMMON|VS|HS|DS|GS|PS)\\b",
+			"begin": "\\b(HEADER|MODES|FEATURES|COMMON|VS|HS|DS|GS|PS|CS)\\b",
 			"beginCaptures": {
 				"1": {
 					"name": "keyword.namespace.hlsl"

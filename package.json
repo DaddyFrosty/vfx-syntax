@@ -2,7 +2,7 @@
 	"name": "vfx",
 	"displayName": "VFX Syntax Highlighter",
 	"description": "Syntax Highlighter for the VFX language (Valve Shading Language) and HLSL",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"publisher": "DaddyFrosty",
 	"license": "MIT",
 	"icon": "icons/met.ico",
@@ -40,8 +40,8 @@
 				],
 				"configuration": "./language-configuration.json",
 				"icon": {
-					"light": "./icons/met.ico",
-					"dark": "./icons/met.ico"
+					"light": "./icons/f_x_active.png",
+					"dark": "./icons/f_x_active.png"
 				}
 			}
 		],

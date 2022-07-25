@@ -22,7 +22,6 @@ import daddyfrosty.intellij.IconUtils;
 import com.intellij.openapi.util.IconLoader;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.jetbrains.plugins.textmate;
 
 import javax.swing.Icon;
 import java.util.ArrayList;
@@ -38,14 +37,17 @@ import java.util.stream.Stream;
 public class vfxIconProvider extends BaseIconProvider {
 
     private static final String VFX_ICON = "icons/vfx.png";
+    private static final String HLSL_ICON = "icons/f_x_active.png";
 
     //@Override
     @Nullable
     @Override
     public Icon getIconSimple( @NotNull String fileName ) {
-        if ( fileName.endsWith(".vfx") || fileName.endsWith(".hlsl") ) {
+        if ( fileName.endsWith(".vfx") ) {
             return IconUtils.getIcon( VFX_ICON );
-        }
+        } else if ( fileName.endsWith(".hlsl") ) {
+            return IconUtils.getIcon( HLSL_ICON );
+		}
         return null;
     }
 }

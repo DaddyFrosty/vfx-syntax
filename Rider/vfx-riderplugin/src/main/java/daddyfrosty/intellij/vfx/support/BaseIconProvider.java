@@ -85,7 +85,7 @@ public abstract class BaseIconProvider extends IconProvider {
         return null;
     }
 
-    private static final Logger LOGGER = Logger.getInstance(vfxIconProvider.class);
+    private static final Logger LOGGER = Logger.getInstance(BaseIconProvider.class);
     private void logError(@NotNull Throwable e) {
         if (e instanceof ControlFlowException) {
             // Control-flow exceptions should never be logged.
