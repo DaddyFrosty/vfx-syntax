@@ -8,6 +8,7 @@ Supports
 
 * VS Code
 * Rider
+* Fleet (ish)
 
 ## Features
 
@@ -21,6 +22,9 @@ The macro instantly saves all files and calls the [TouchForRider.exe](Rider/Touc
 ## Setup
 
 For VS Code it's just a simple install. You can either git clone or search for "VFX Syntax Highlighter" or grab it [here](https://marketplace.visualstudio.com/items?itemName=DaddyFrosty.vfx) from the marketplace.
+
+## Fleet
+For fleet you just download the [Rider/vfx-textmate.zip](Rider/vfx-textmate.zip) and extract the folder into '%UserProfile%\.fleet\textmate'. And it will automatically detect .vfx and .hlsl files.
 
 ## Rider Setup
 
