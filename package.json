@@ -2,7 +2,7 @@
 	"name": "vfx",
 	"displayName": "VFX Syntax Highlighter",
 	"description": "Syntax Highlighter for the VFX language (Valve Shading Language) and HLSL",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"publisher": "DaddyFrosty",
 	"license": "MIT",
 	"icon": "icons/met.ico",
@@ -10,14 +10,15 @@
 		"vscode": "*"
 	},
 	"scripts": {
-		"update-grammar": "node ../node_modules/vscode-grammar-updater/bin tgjones/shaders-tmLanguage grammars/vfx.json ./syntaxes/vfx.tmLanguage.jsonc"
+		"update-grammar": "node %appdata%/npm/node_modules/vscode-grammar-updater/bin tgjones/shaders-tmLanguage grammars/vfx.json ./syntaxes/vfx.tmLanguage.jsonc"
 	},
 	"contributes": {
 		"languages": [
 			{
 				"id": "vfx",
 				"extensions": [
-					".vfx"
+					".vfx",
+					".shader"
 				],
 				"aliases": [
 					"VFX",
@@ -67,6 +68,9 @@
 		"publisherDisplayName": "DaddyFrosty",
 		"publisherId": "d5ba6fba-90c2-44fa-ba14-cb02ff6e6d66",
 		"isPreReleaseVersion": false,
-		"installedTimestamp": 1658655760695
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"preRelease": false
 	}
 }

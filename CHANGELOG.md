@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "vfx" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## [1.0.4]
 
 - Initial release
+
+## [1.0.5]
+
+- Added support for .shader as s&box switched extension from .vfx to .shader.

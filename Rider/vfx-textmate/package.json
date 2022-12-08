@@ -16,7 +16,8 @@
 			{
 				"id": "vfx",
 				"extensions": [
-					".vfx"
+					".vfx",
+					".shader"
 				],
 				"aliases": [
 					"VFX",
